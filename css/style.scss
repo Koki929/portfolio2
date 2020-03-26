@@ -13,6 +13,7 @@ html {
 }
 
 body {
+	background-color: #EEE;
     margin: 0;
     padding: 0;
 	font-family: arial, sans-serif;
@@ -70,9 +71,9 @@ $breakpoints: (
 	cursor: pointer;
 	font-size: 20px;
 	position: absolute;
-	right: 17px;
+	right: 30px;
 	text-align: center;
-	top: 29px;
+	top: 300px;
 	z-index: 41;
 }
 
@@ -132,5 +133,34 @@ $breakpoints: (
 		right: -150px;
 		top: 152px;
 		transform:rotate(90deg);
+		z-index: -1;
+	}
+	.main-visual-fixed {
+		color: #EEE;
+		font-size: 95px;
+		position: fixed;
+		right: -150px;
+		text-shadow:
+			1px 0 0 $black,
+			0 1px 0 $black,
+			-1px 0 0 $black,
+			0 -1px 0 $black;
+		top: 152px;
+		transform:rotate(90deg);
+		z-index: -2;
+	}
+	h2 {
+		color: #EEE;
+		font-size: 108px;
+		left: 80px;
+		letter-spacing: 2px;
+		position: absolute;
+		text-shadow:
+			1px 0 0 $black,
+			0 1px 0 $black,
+			-1px 0 0 $black,
+			0 -1px 0 $black;
+		top: 270px;
+		z-index: -1;
 	}
 }
