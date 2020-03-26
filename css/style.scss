@@ -15,7 +15,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+	font-family: arial, sans-serif;
 }
 
 h1,h2,h3,h4,h5 {
@@ -58,7 +58,11 @@ $breakpoints: (
 /********** drawer **********/
 
 .drawer {
-	display: none;
+	display: block;
+	background-color: $black;
+	height: 100vw;
+	position: fixed;
+	width: 80px;
 }
 
 .drawer-icon {
@@ -117,4 +121,16 @@ $breakpoints: (
 	font-size: 16px;
 	padding: 20px 12px 24px 0;
 	text-decoration: none;
+}
+
+/********** main-visual **********/
+.main-visual {
+	position: relative;
+	h1 {
+		font-size: 95px;
+		position: absolute;
+		right: -150px;
+		top: 152px;
+		transform:rotate(90deg);
+	}
 }
