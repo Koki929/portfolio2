@@ -45,45 +45,75 @@ a {
 .drawer {
   display: block;
   background-color: #333;
-  height: 100vw;
+  height: 100vh;
   position: fixed;
   width: 80px;
 }
 
 .drawer-icon {
-  color: #fff;
   cursor: pointer;
-  font-size: 20px;
+  height: 30px;
   position: absolute;
-  right: 30px;
   text-align: center;
-  top: 300px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 80px;
   z-index: 41;
 }
 
-.drawer-open {
-  display: block;
+.drawer-icon:hover {
+  height: 40px;
+  opacity: 0.7;
 }
 
-.m_checked .drawer-open {
+.drawer-icon span {
+  background-color: #EEE;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  width: 2px;
+}
+
+.drawer-icon span:nth-of-type(1) {
+  left: 34px;
+}
+
+.drawer-icon span:nth-of-type(2) {
+  left: 40px;
+}
+
+.drawer-icon span:nth-of-type(3) {
+  left: 46px;
+}
+
+.m_checked .drawer-icon span:nth-of-type(1) {
+  left: 39.5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.m_checked .drawer-icon span:nth-of-type(2) {
   display: none;
 }
 
-.drawer-close {
-  display: none;
-}
-
-.m_checked .drawer-close {
-  display: block;
+.m_checked .drawer-icon span:nth-of-type(3) {
+  left: 40.5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .drawer-content {
   background: rgba(51, 51, 51, 0.9);
   height: 100vh;
-  left: 0;
+  left: 80px;
   opacity: 0;
   overflow: auto;
-  padding: 100px 16px 16px;
+  padding: 145px 16px 16px;
   position: fixed;
   text-align: left;
   top: 0;
