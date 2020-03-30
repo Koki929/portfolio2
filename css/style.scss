@@ -152,6 +152,7 @@ $breakpoints: (
 	position: relative;
 	z-index: -1;
 	h1 {
+		color: $black;
 		font-size: 95px;
 		position: absolute;
 		right: -150px;
@@ -172,6 +173,26 @@ $breakpoints: (
 		top: 152px;
 		transform:rotate(90deg);
 		z-index: -2;
+	}
+	hr {
+		color: $black;
+		height: 1px;
+		position: absolute;
+		transform:rotate(90deg);
+		right: 0;
+		z-index: -2;
+		&:nth-of-type(1) {
+			right: -534px;
+			width: 1250px;
+		}
+		&:nth-of-type(2) {
+			right: -275px;
+			width: 950px;
+		}
+		&:nth-of-type(3) {
+			right: 108px;
+			width: 400px;
+		}
 	}
 	h2 {
 		color: #EEE;

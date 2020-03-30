@@ -147,6 +147,7 @@ a {
 }
 
 .main-visual h1 {
+  color: #333;
   font-size: 95px;
   position: absolute;
   right: -150px;
@@ -166,6 +167,31 @@ a {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   z-index: -2;
+}
+
+.main-visual hr {
+  color: #333;
+  height: 1px;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 0;
+  z-index: -2;
+}
+
+.main-visual hr:nth-of-type(1) {
+  right: -534px;
+  width: 1250px;
+}
+
+.main-visual hr:nth-of-type(2) {
+  right: -275px;
+  width: 950px;
+}
+
+.main-visual hr:nth-of-type(3) {
+  right: 108px;
+  width: 400px;
 }
 
 .main-visual h2 {
