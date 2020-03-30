@@ -141,7 +141,9 @@ a {
 
 /********** main-visual **********/
 .main-visual {
+  height: 100vh;
   position: relative;
+  z-index: -1;
 }
 
 .main-visual h1 {
@@ -159,7 +161,7 @@ a {
   font-size: 95px;
   position: fixed;
   right: -150px;
-  text-shadow: 1px 0 0 #333, 0 1px 0 #333, -1px 0 0 #333, 0 -1px 0 #333;
+  text-shadow: 0.3px 0 0 #333, 0 0.3px 0 #333, -0.3px 0 0 #333, 0 -0.3px 0 #333;
   top: 152px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -175,5 +177,10 @@ a {
   text-shadow: 1px 0 0 #333, 0 1px 0 #333, -1px 0 0 #333, 0 -1px 0 #333;
   top: 270px;
   z-index: -1;
+}
+
+/********** about **********/
+.about {
+  padding: 60px 0 0 80px;
 }
 /*# sourceMappingURL=style.css.map */
