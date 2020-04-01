@@ -11,6 +11,7 @@ html {
 
 body {
   background-color: #EEE;
+  color: #333;
   margin: 0;
   padding: 0;
   font-family: arial, sans-serif;
@@ -162,7 +163,7 @@ a {
   font-size: 95px;
   position: fixed;
   right: -150px;
-  text-shadow: 0.3px 0 0 #333, 0 0.3px 0 #333, -0.3px 0 0 #333, 0 -0.3px 0 #333;
+  text-shadow: 0.6px 0 0 #BBB, 0 0.6px 0 #BBB, -0.6px 0 0 #BBB, 0 -0.6px 0 #BBB;
   top: 152px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -170,27 +171,30 @@ a {
 }
 
 .main-visual hr {
-  color: #333;
   height: 1px;
-  position: absolute;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  right: 0;
   z-index: -2;
 }
 
 .main-visual hr:nth-of-type(1) {
+  color: #333;
+  position: absolute;
   right: -534px;
   width: 1250px;
 }
 
 .main-visual hr:nth-of-type(2) {
+  color: #333;
+  position: absolute;
   right: -275px;
   width: 950px;
 }
 
 .main-visual hr:nth-of-type(3) {
-  right: 108px;
+  color: #333;
+  position: absolute;
+  right: 109px;
   width: 400px;
 }
 
@@ -207,6 +211,47 @@ a {
 
 /********** about **********/
 .about {
-  padding: 60px 0 0 80px;
+  padding-top: 300px;
+}
+
+.about h2 {
+  color: #333;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100px;
+}
+
+/********** works **********/
+.works {
+  padding-top: 300px;
+}
+
+.works h2 {
+  color: #333;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100px;
+  text-align: right;
+}
+
+/********** skills **********/
+.skills {
+  padding-top: 300px;
+}
+
+.skills h2 {
+  color: #333;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100px;
+}
+
+/********** contact **********/
+.contact {
+  padding-top: 300px;
+}
+
+.contact h2 {
+  color: #333;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 100px;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
