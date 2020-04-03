@@ -320,68 +320,79 @@ a {
 }
 
 .works .works-contents {
-  height: 2000px;
+  height: 3000px;
   position: relative;
 }
 
 .works .works-contents .works-item {
-  background-color: #FFF;
-  border-radius: 5px;
-  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
-          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
-  height: 350px;
-  padding-top: 20px;
+  height: 300px;
   position: absolute;
-  text-align: center;
-  width: 360px;
+  width: 500px;
 }
 
 .works .works-contents .works-item img {
-  border-radius: 5px;
-  height: 200px;
+  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 20px;
-  width: 320px;
+  position: relative;
+  width: 500px;
 }
 
-.works .works-contents .works-item h3 {
-  margin-bottom: 20px;
+.works .works-contents .works-item-text {
+  background-color: #333;
+  height: 60px;
+  padding: 10px 0 0 10px;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  width: 300px;
+}
+
+.works .works-contents .works-item-text h3 {
+  color: #FFF;
+  font-size: 16px;
+}
+
+.works .works-contents .works-item-text p {
+  color: #BBB;
+  font-size: 12px;
 }
 
 .works .works-contents .works-layout1 {
-  top: 0;
   left: 0;
+  top: 50px;
 }
 
 .works .works-contents .works-layout2 {
   right: 0;
-  top: 300px;
+  top: 500px;
 }
 
 .works .works-contents .works-layout3 {
   left: 0;
-  top: 600px;
+  top: 950px;
 }
 
 .works .works-contents .works-layout4 {
   right: 0;
-  top: 900px;
+  top: 1400px;
 }
 
 .works .works-contents .works-layout5 {
   left: 0;
-  top: 1200px;
+  top: 1850px;
 }
 
 .works .works-contents .works-layout6 {
   right: 0;
-  top: 1500px;
+  top: 2300px;
 }
 
 .works .works-contents .works-layout7 {
   left: 0;
-  top: 1800px;
+  top: 2750px;
 }
 
 /********** skills **********/
@@ -402,6 +413,65 @@ a {
   left: -26px;
   position: absolute;
   width: 300px;
+}
+
+.skills .skills-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  text-align: center;
+}
+
+.skills .skills-contents img {
+  position: absolute;
+}
+
+.skills .skills-contents img:nth-child(1) {
+  left: 65px;
+  top: 155px;
+  width: 680px;
+}
+
+.skills .skills-contents img:nth-child(2) {
+  left: 65px;
+  top: 375px;
+  width: 680px;
+}
+
+.skills .skills-contents img:nth-child(3) {
+  left: 16px;
+  top: 270px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 680px;
+}
+
+.skills .skills-contents img:nth-child(4) {
+  left: 280px;
+  top: 270px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 680px;
+}
+
+.skills .skills-contents-item {
+  margin-bottom: 110px;
+  width: 33.33%;
+}
+
+.skills .skills-contents-item i {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.skills .skills-contents-item p {
+  font-size: 12px;
 }
 
 /********** contact **********/
