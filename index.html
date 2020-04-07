@@ -23,13 +23,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="loader-background">
+        <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+        </div>
+    </div>
 
     <div class="drawer">
         <div class="drawer-icon">
             <span></span>
             <span></span>
             <span></span>
-        </div><!-- /drawer-icon -->
+        </div><!-- drawer-icon -->
+        <div class="back-to-top">
+            <a href="#"></a>
+        </div><!-- back-to-top -->
         <div class="drawer-content">
             <nav class="drawer-nav">
                 <ul class="drawer-list">
@@ -89,49 +102,63 @@
             <h2>WORKS<img src="img/line.png" alt="筆線"></h2>
             <div class="works-contents">
                 <div class="works-item works-layout1">
-                    <img src="img/sample.jpg" alt="サンプル">
+                    <div class="works-item-image">
+                        <a href="#"><img src="img/sample.jpg" alt="サンプル"></a>
+                    </div>
                     <div class="works-item-text">
                         <h3>タイトルタイトルタイトル</h3>
                         <p>HTML, CSS, jQuery, WordPress</p>
                     </div>
                 </div>
                 <div class="works-item works-layout2">
-                    <img src="img/sample.jpg" alt="サンプル">
+                    <div class="works-item-image">
+                        <a href="#"><img src="img/sample.jpg" alt="サンプル"></a>
+                    </div>
                     <div class="works-item-text">
                         <h3>タイトルタイトルタイトル</h3>
                         <p>HTML, CSS, jQuery, WordPress</p>
                     </div>
                 </div>
                 <div class="works-item works-layout3">
-                    <img src="img/sample.jpg" alt="サンプル">
+                    <div class="works-item-image">
+                        <a href="#"><img src="img/sample.jpg" alt="サンプル"></a>
+                    </div>
                     <div class="works-item-text">
                         <h3>タイトルタイトルタイトル</h3>
                         <p>HTML, CSS, jQuery, WordPress</p>
                     </div>
                 </div>
                 <div class="works-item works-layout4">
-                    <img src="img/sample.jpg" alt="サンプル">
+                    <div class="works-item-image">
+                        <a href="#"><img src="img/sample.jpg" alt="サンプル"></a>
+                    </div>
                     <div class="works-item-text">
                         <h3>タイトルタイトルタイトル</h3>
                         <p>HTML, CSS, jQuery, WordPress</p>
                     </div>
                 </div>
                 <div class="works-item works-layout5">
-                    <img src="img/sample.jpg" alt="サンプル">
+                    <div class="works-item-image">
+                        <a href="#"><img src="img/sample.jpg" alt="サンプル"></a>
+                    </div>
                     <div class="works-item-text">
                         <h3>タイトルタイトルタイトル</h3>
                         <p>HTML, CSS, jQuery, WordPress</p>
                     </div>
                 </div>
                 <div class="works-item works-layout6">
-                    <img src="img/sample.jpg" alt="サンプル">
+                    <div class="works-item-image">
+                        <a href="#"><img src="img/sample.jpg" alt="サンプル"></a>
+                    </div>
                     <div class="works-item-text">
                         <h3>タイトルタイトルタイトル</h3>
                         <p>HTML, CSS, jQuery, WordPress</p>
                     </div>
                 </div>
                 <div class="works-item works-layout7">
-                    <img src="img/sample.jpg" alt="サンプル">
+                    <div class="works-item-image">
+                        <a href="#"><img src="img/sample.jpg" alt="サンプル"></a>
+                    </div>
                     <div class="works-item-text">
                         <h3>タイトルタイトルタイトル</h3>
                         <p>HTML, CSS, jQuery, WordPress</p>
@@ -193,8 +220,37 @@
     <section class="contact">
         <div class="inner">
             <h2>CONTACT<img src="img/line.png" alt="筆線"></h2>
+            <form action="" class="contact-items">
+                <div class="contact-name">
+                    <h3>Name</h3>
+                    <div class="name-content">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="contact-mail">
+                    <h3>E-mail</h3>
+                    <div class="mail-content">
+                        <input type="email">
+                    </div>
+                </div>
+                <div class="contact-text">
+                    <h3>Message</h3>
+                    <div class="text-content">
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="contact-submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
         </div><!-- inner -->
     </section><!-- contact -->
+
+    <section class="footer">
+        <div class="inner">
+            <p>© 2020 Koki Portfolio.</p>
+        </div><!-- inner -->
+    </section><!-- footer -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>

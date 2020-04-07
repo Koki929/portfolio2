@@ -58,6 +58,193 @@ $breakpoints: (
   }
 }
 
+/********** loader **********/
+#loader-background {
+	width: 100vw;
+ 	height: 100vh;
+	background: #BBB;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	.loader	{
+		position: relative;
+		width: 75px;
+		height: 100px;
+		&__bar	{
+			position: absolute;
+			bottom: 0;
+			width: 10px;
+			height: 50%;
+			background: #FFF;
+			transform-origin: center bottom;
+			box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+			@for $i from 1 through 5 { 
+				&:nth-child(#{$i}) {
+				left: ($i - 1) * 15px;
+				transform: scale(1,$i*.2);
+				animation: barUp#{$i} 4s infinite;
+				}
+			}
+		}
+		&__ball {
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			background: #FFF;
+			border-radius: 50%;
+			animation: ball 4s infinite;
+		}
+	}
+}
+
+.loaded {
+	opacity: 0;
+	visibility: hidden;
+}
+
+@keyframes ball {
+	0% {
+	transform: translate(0, 0);
+	}
+	5% {
+	transform: translate(8px, -14px);
+	}
+	10% {
+	transform: translate(15px, -10px)
+	}
+	17% {
+	transform: translate(23px, -24px)
+	}
+	20% {
+	transform: translate(30px, -20px)
+	}
+	27% {
+	transform: translate(38px, -34px)
+	}
+	30% {
+	transform: translate(45px, -30px)
+	}
+	37% {
+	transform: translate(53px, -44px)
+	}
+	40% {
+	transform: translate(60px, -40px)
+	}
+	50% {
+	transform: translate(60px, 0)
+	}
+	57% {
+	transform: translate(53px, -14px)
+	}
+	60% {
+	transform: translate(45px, -10px)
+	}
+	67% {
+	transform: translate(37px, -24px)
+	}
+	70% {
+	transform: translate(30px, -20px)
+	}
+	77% {
+	transform: translate(22px, -34px)
+	}
+	80% {
+	transform: translate(15px, -30px)
+	}
+	87% {
+	transform: translate(7px, -44px)
+	}
+	90% {
+	transform: translate(0, -40px)
+	}
+	100% {
+	transform: translate(0, 0);
+	}
+}
+
+@keyframes barUp1 { 
+	0% {
+	transform: scale(1, .2);
+	}
+	40%{
+	transform: scale(1, .2);
+	}
+	50% {
+	transform: scale(1, 1);
+	}
+	90% {
+	transform: scale(1,1);
+	}
+	100% {
+	transform: scale(1,.2);
+	}
+}
+@keyframes barUp2 { 
+	0% {
+	transform: scale(1, .4);
+	}
+	40% {
+	transform: scale(1, .4);
+	}
+	50% {
+	transform: scale(1, .8);
+	}
+	90% {
+	transform: scale(1, .8);
+	}
+	100% {
+	transform: scale(1, .4);
+	}
+}
+@keyframes barUp3 { 
+	0% {
+	transform: scale(1, .6);
+	}
+	100% {
+	transform: scale(1, .6);
+	}
+}
+@keyframes barUp4 { 
+	0% {
+	transform: scale(1, .8);
+	}
+	40% {
+	transform: scale(1, .8);
+	}
+	50% {
+	transform: scale(1, .4);
+	}
+	90% {
+	transform: scale(1, .4);
+	}
+	100% {
+	transform: scale(1, .8);
+	}
+}
+@keyframes barUp5 { 
+	0% {
+	transform: scale(1, 1);
+	}
+	40% {
+	transform: scale(1, 1);
+	}
+	50% {
+	transform: scale(1, .2);
+	}
+	90% {
+	transform: scale(1, .2);
+	}
+	100% {
+	transform: scale(1, 1);
+	}
+}
+
 /********** drawer **********/
 
 .drawer {
@@ -113,6 +300,25 @@ $breakpoints: (
 		&:nth-of-type(3) {
 			left: 40.5px;
 			transform: rotate(-45deg);
+		}
+	}
+}
+
+.back-to-top {
+	position: absolute;
+	a {
+		color: #FFF;
+		display: inline-block;
+		position: relative;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+		}
+		&:before {
+			left: 3px;
+			width: 7px;
+			height: 1px;
+			background: #FFF;
 		}
 	}
 }
@@ -303,18 +509,28 @@ $breakpoints: (
 		}
 	}
 	.works-contents {
-		height: 3000px;
+		height: 3200px;
 		position: relative;
 		.works-item {
 			height: 300px;
 			position: absolute;
 			width: 500px;
-			img {
-				filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
-				height: 300px;
-				object-fit: cover;
-				position: relative;
-				width: 500px;
+			.works-item-image {
+				background: #000;
+				overflow: hidden;
+				img {
+					filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+					height: 300px;
+					object-fit: cover;
+					position: relative;
+					transition-duration: 0.4s;
+					width: 500px;
+					&:hover {
+						opacity: 0.6;
+						transform: scale(1.1);
+						transition-duration: 0.4s;
+					}
+				}
 			}
 			&-text {
 				background-color: $black;
@@ -372,7 +588,7 @@ $breakpoints: (
 		color: $black;
 		font-family: 'Fjalla One', sans-serif;
 		font-size: 100px;
-		margin-bottom: 60px;
+		margin-bottom: 140px;
 		position: relative;
 		img {
 			bottom: 8px;
@@ -390,30 +606,30 @@ $breakpoints: (
 		img {
 			position: absolute;
 			&:nth-child(1) {
-				left: 65px;
-				top: 155px;
-				width: 680px;
+				left: 45px;
+				top: 165px;
+				width: 720px;
 			}
 			&:nth-child(2) {
-				left: 65px;
-				top: 375px;
-				width: 680px;
+				left: 45px;
+				top: 395px;
+				width: 720px;
 			}
 			&:nth-child(3) {
-				left: 16px;
-				top: 270px;
+				left: -70px;
+				top: 280px;
 				transform:rotate(90deg);
 				width: 680px;
 			}
 			&:nth-child(4) {
-				left: 280px;
-				top: 270px;
+				left: 190px;
+				top: 280px;
 				transform:rotate(90deg);
 				width: 680px;
 			}
 		}
 		&-item {
-			margin-bottom: 110px;
+			margin-bottom: 130px;
 			width: 33.33%;
 			i {
 				font-size: 80px;
@@ -422,6 +638,60 @@ $breakpoints: (
 			p {
 				font-size: 12px;
 			}
+			.fa-html5 {
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: #E44D26;
+				}
+			}
+			.fa-css3-alt {
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: #379AD6;
+				}
+			}
+			.fa-sass {
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: #CF649A;
+				}
+			}
+			.fa-bootstrap {
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: #5C3E86;
+				}
+			}
+			.fa-js {
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: #F0DB4F;
+				}
+			}
+			.fa-php {
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: #7478AE;
+				}
+			}
+			.fa-database {
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: #005F87;
+				}
+			}
+			.fa-wordpress {
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: #0073AA;
+				}
+			}
+			.fa-github-square {
+				transition: all 0.3s ease 0s;
+				&:hover {
+					color: #000;
+				}
+			}
 		}
 	}
 }
@@ -429,18 +699,178 @@ $breakpoints: (
 /********** contact **********/
 .contact {
 	padding-top: 300px;
-	h2 {
-		color: $black;
-		font-family: 'Fjalla One', sans-serif;
-		font-size: 100px;
-		margin-bottom: 60px;
-		position: relative;
-		text-align: right;
-		img {
-			bottom: 8px;
-			position: absolute;
-			right: -34px;
-			width: 390px;
+	.inner {
+		h2 {
+			color: $black;
+			font-family: 'Fjalla One', sans-serif;
+			font-size: 100px;
+			margin-bottom: 60px;
+			position: relative;
+			text-align: right;
+			img {
+				bottom: 8px;
+				position: absolute;
+				right: -34px;
+				width: 390px;
+			}
 		}
+		.contact-items {
+			.contact-name {
+				margin: 0 auto 40px;
+				width: 600px;
+				h3 {
+					color: #999;
+					font-size: 18px;
+					font-weight: normal;
+					margin-bottom: 20px;
+				}
+				.name-content {
+					input {
+						-moz-appearance: none;
+						-webkit-appearance: none;
+						appearance: none;
+						background-image: none;
+						border-bottom: none;
+						border-right: none;
+						border-left: none;
+						border-top: none;
+						font-family: arial, '游ゴシック体', 'YuGothic', sans-serif;
+						font-size: 18px;
+						color: $black;
+						width: 600px;
+						height: 50px;
+						padding-left: 10px;
+						transition: all 0.3s ease 0s;
+						border-radius: 10px;
+						background: #EEEEEE;
+						box-shadow:  5px 5px 10px #cacaca, 
+            						 -5px -5px 10px #ffffff;
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+			}
+			.contact-mail {
+				margin: 0 auto 40px;
+				width: 600px;
+				h3 {
+					color: #999;
+					font-size: 18px;
+					font-weight: normal;
+					margin-bottom: 20px;
+				}
+				.mail-content {
+					input {
+						-moz-appearance: none;
+						-webkit-appearance: none;
+						appearance: none;
+						background-image: none;
+						border-bottom: none;
+						border-right: none;
+						border-left: none;
+						border-top: none;
+						font-family: arial, '游ゴシック体', 'YuGothic', sans-serif;
+						font-size: 18px;
+						color: $black;
+						width: 600px;
+						height: 50px;
+						padding-left: 9px;
+						border-radius: 10px;
+						background: #EEEEEE;
+						box-shadow:  5px 5px 10px #cacaca, 
+            						 -5px -5px 10px #ffffff;
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+			}
+			.contact-text {
+				margin: 0 auto 40px;
+				width: 600px;
+				h3 {
+					color: #999;
+					font-size: 18px;
+					font-weight: normal;
+					margin-bottom: 20px;
+				}
+				.text-content {
+					textarea {
+						-moz-appearance: none;
+						-webkit-appearance: none;
+						appearance: none;
+						background-image: none;
+						border: none;
+						border-radius: 0;
+						color: $black;
+						font-family: arial, '游ゴシック体', 'YuGothic', sans-serif;
+						font-size: 16px;
+						height: 213px;
+						width: 600px;
+						padding: 10px;
+						transition: all 0.3s ease 0s;
+						border-radius: 10px;
+						background: #EEEEEE;
+						box-shadow:  5px 5px 10px #cacaca, 
+            						 -5px -5px 10px #ffffff;
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+			}
+			.contact-submit {
+				text-align: center;
+				input {
+					-webkit-appearance: none;
+					background-image: none;
+					border: none;
+					color: #999;
+					cursor: pointer;
+					display: inline-block;
+					font-size: 18px;
+					font-weight: normal;
+					width: 174px;
+					height: 50px;
+					text-decoration: none;
+					font-family: arial, '游ゴシック体', 'YuGothic', sans-serif;
+					transition: all 0.3s ease 0s;
+					border-radius: 10px;
+					background: #EEEEEE;
+					box-shadow:  5px 5px 10px #cacaca, 
+            					 -5px -5px 10px #ffffff;
+				}
+				input:hover,
+				input:focus {
+					background: #CCCCCC;
+					box-shadow:  5px 5px 10px #adadad, 
+								-5px -5px 10px #ebebeb;
+					color: #EEE;
+					outline: none;
+				}
+				input::-moz-focus-inner {
+					background: #CCCCCC;
+					box-shadow:  5px 5px 10px #adadad, 
+								-5px -5px 10px #ebebeb;
+					border: none;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
+/********** footer **********/
+.footer {
+	background-color: $black;
+	height: 70px;
+	margin-top: 100px;
+	p {
+		color: #FFF;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 70px;
+		text-align: center;
 	}
 }
