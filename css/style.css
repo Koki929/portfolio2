@@ -812,6 +812,14 @@ a {
   margin-bottom: 60px;
 }
 
+.about .inner .movetext {
+  opacity: 0;
+}
+
+.about .inner .movetext span {
+  opacity: 0;
+}
+
 .about .inner h4 {
   font-family: 'Yu Mincho';
   font-size: 30px;
