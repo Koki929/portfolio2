@@ -305,21 +305,46 @@ $breakpoints: (
 }
 
 .back-to-top {
+	bottom: 50px;
+	left: 50%;
 	position: absolute;
+	transform : translateX(-50%);
 	a {
 		color: #FFF;
 		display: inline-block;
+		height: 60px;
 		position: relative;
-		&:before, &:after {
+		width: 80px;
+		&:before, &::after {
 			content: "";
 			position: absolute;
 		}
 		&:before {
-			left: 3px;
-			width: 7px;
-			height: 1px;
+			left: 50%;
+			width: 1px;
+			height: 60px;
 			background: #FFF;
+			transform : translateX(-50%);
 		}
+		&:after {
+			animation: move 1.5s linear infinite;
+			left: 50%;
+			width: 13px;
+			height: 13px;
+			border: 1px solid #FFF;
+			border-radius: 50%;
+			top: 0;
+			transform : translateX(-50%);
+		}
+	}
+}
+
+@keyframes move {
+	0% {
+	  top: 45px;
+	}
+	100% {
+	  top: 5px;
 	}
 }
 
@@ -480,7 +505,7 @@ $breakpoints: (
 			font-weight: bold;
 			line-height: 40px;
 			margin-bottom: 60px;
-		}
+		}			
 		h4 {
 			font-family: 'Yu Mincho';
 			font-size: 30px;
