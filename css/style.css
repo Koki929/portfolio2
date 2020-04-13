@@ -685,7 +685,7 @@ a {
   font-size: 95px;
   position: fixed;
   right: -150px;
-  text-shadow: 0.6px 0 0 #BBB, 0 0.6px 0 #BBB, -0.6px 0 0 #BBB, 0 -0.6px 0 #BBB;
+  text-shadow: 0.6px 0 0 #BBB, 0 0.6px 0 #BBB, -0.6px 0 0 #BBB, 0 -0.6px 0 #BBB;
   top: 152px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -821,7 +821,7 @@ a {
 }
 
 .about .inner h4 {
-  font-family: 'Yu Mincho';
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 30px;
   text-align: center;
 }
@@ -860,6 +860,7 @@ a {
 
 .works .works-contents .works-item .works-item-image {
   background: #000;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -869,6 +870,8 @@ a {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
   position: relative;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -896,6 +899,7 @@ a {
 .works .works-contents .works-item-text h3 {
   color: #FFF;
   font-size: 16px;
+  margin-bottom: 3px;
 }
 
 .works .works-contents .works-item-text p {
@@ -1150,8 +1154,8 @@ a {
   transition: all 0.3s ease 0s;
   border-radius: 10px;
   background: #EEEEEE;
-  -webkit-box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
 }
 
 .contact .inner .contact-items .contact-name .name-content input:focus {
@@ -1187,8 +1191,8 @@ a {
   padding-left: 9px;
   border-radius: 10px;
   background: #EEEEEE;
-  -webkit-box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
 }
 
 .contact .inner .contact-items .contact-mail .mail-content input:focus {
@@ -1224,8 +1228,8 @@ a {
   transition: all 0.3s ease 0s;
   border-radius: 10px;
   background: #EEEEEE;
-  -webkit-box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
 }
 
 .contact .inner .contact-items .contact-text .text-content textarea:focus {
@@ -1253,22 +1257,22 @@ a {
   transition: all 0.3s ease 0s;
   border-radius: 10px;
   background: #EEEEEE;
-  -webkit-box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
-          box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
+  -webkit-box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
+          box-shadow: 5px 5px 10px #cacaca,  -5px -5px 10px #ffffff;
 }
 
 .contact .inner .contact-items .contact-submit input:hover,
 .contact .inner .contact-items .contact-submit input:focus {
   background: #CCCCCC;
-  -webkit-box-shadow: 5px 5px 10px #adadad,  -5px -5px 10px #ebebeb;
-          box-shadow: 5px 5px 10px #adadad,  -5px -5px 10px #ebebeb;
+  -webkit-box-shadow: 5px 5px 10px #adadad,  -5px -5px 10px #ebebeb;
+          box-shadow: 5px 5px 10px #adadad,  -5px -5px 10px #ebebeb;
   color: #EEE;
   outline: none;
 }
 
 .contact .inner .contact-items .contact-submit input::-moz-focus-inner {
   background: #CCCCCC;
-  box-shadow: 5px 5px 10px #adadad,  -5px -5px 10px #ebebeb;
+  box-shadow: 5px 5px 10px #adadad,  -5px -5px 10px #ebebeb;
   border: none;
   padding: 0;
 }

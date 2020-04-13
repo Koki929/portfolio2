@@ -513,7 +513,7 @@ $breakpoints: (
 			opacity:0;
 		}
 		h4 {
-			font-family: 'Yu Mincho';
+			font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 			font-size: 30px;
 			text-align: center;
 		}
@@ -548,11 +548,13 @@ $breakpoints: (
 			width: 500px;
 			.works-item-image {
 				background: #000;
+				height: 300px;
 				overflow: hidden;
 				img {
 					filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
 					height: 300px;
 					object-fit: cover;
+					object-position:0% 0%;
 					position: relative;
 					transition-duration: 0.4s;
 					width: 500px;
@@ -574,6 +576,7 @@ $breakpoints: (
 				h3 {
 					color: #FFF;
 					font-size: 16px;
+					margin-bottom: 3px;
 				}
 				p {
 					color: #BBB;
