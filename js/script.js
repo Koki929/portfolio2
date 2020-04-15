@@ -5,7 +5,7 @@ window.onload = function() {
 }
 
 /* drawer */
-jQuery('.drawer-icon').on('click', function () {
+jQuery('.drawer-switch').on('click', function () {
 	jQuery('.drawer').toggleClass('m_checked');
 });
 
@@ -48,3 +48,6 @@ $('.movetext').each(function(){
         };
     });
 });
+
+/* wow */
+new WOW().init();

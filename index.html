@@ -21,6 +21,8 @@
     <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <!-- wow -->
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
     <div id="loader-background">
@@ -35,7 +37,7 @@
     </div>
 
     <div class="drawer">
-        <div class="drawer-icon">
+        <div class="drawer-icon drawer-switch">
             <span></span>
             <span></span>
             <span></span>
@@ -46,11 +48,10 @@
         <div class="drawer-content">
             <nav class="drawer-nav">
                 <ul class="drawer-list">
-                    <li class="m_icon1 menu-item"><a href="#">メニュー1</a></li>
-                    <li class="m_icon2 menu-item"><a href="#">メニュー2</a></li>
-                    <li class="m_icon3 menu-item"><a href="#">メニュー3</a></li>
-                    <li class="m_icon4 menu-item"><a href="#">メニュー4</a></li>
-                    <li class="m_icon5 menu-item"><a href="#">メニュー5</a></li>
+                    <li class="m_icon1 menu-item"><a href="#about" class="drawer-switch">WHO I AM</a></li>
+                    <li class="m_icon2 menu-item"><a href="#works" class="drawer-switch">WORKS</a></li>
+                    <li class="m_icon3 menu-item"><a href="#skills" class="drawer-switch">SKILLS</a></li>
+                    <li class="m_icon4 menu-item"><a href="#contact" class="drawer-switch">CONTACT</a></li>
                 </ul>
             </nav>
         </div><!-- /drawer-content -->
@@ -76,13 +77,13 @@
         </h2>
     </section><!-- main-visual -->
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="inner">
-            <div class="about-image">
+            <div class="about-image wow fadeInRight" data-wow-duration="2s">
                 <img src="img/profile.jpg" alt="プロフィール写真">
             </div>
-            <h2>WHO I AM<img src="img/line.png" alt="筆線"></h2>
-            <div class="about-name">
+            <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">WHO I AM<img src="img/line.png" alt="筆線"></h2>
+            <div class="about-name wow fadeInLeft" data-wow-duration="2s">
                 <h3>Koki Matsushita</h3>
                 <a href="https://twitter.com/koki0859"><i class="fab fa-twitter-square"></i>@koki0859</a>
             </div> 
@@ -90,125 +91,124 @@
             <p class="movetext">鳥取県出身、現在は大阪を拠点に活動中。</p>
             <p class="movetext">1年間のシアトル留学を経て、外資系旅行会社の営業職として勤務。</p>
             <p class="movetext">その後IT業界に魅力を感じ、Sierへ転職。</p>
-            <p class="movetext">現在、システムエンジニアとWeb制作フリーランサーとパパを兼業中。</p>
-            
-            <h4>真心込めて、ご対応させていただきます。</h4>
+            <p class="movetext">現在、システムエンジニアとWeb制作フリーランサーとパパを兼業中。</p>     
+            <h4 class="wow fadeInDown" data-wow-delay="1s">真心込めて、ご対応させていただきます。</h4>
 
         </div><!-- inner -->
     </section><!-- about -->
 
-    <section class="works">
+    <section id="works" class="works">
         <div class="inner">
-            <h2>WORKS<img src="img/line.png" alt="筆線"></h2>
+            <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">WORKS<img src="img/line.png" alt="筆線"></h2>
             <div class="works-contents">
-                <div class="works-item works-layout1">
+                <div class="works-item works-layout1 wow fadeInLeft" data-wow-duration="2s">
                     <div class="works-item-image">
                         <a href="https://koki-wordpress2.xyz" target="_blank" rel="noopener noreferrer"><img src="img/works1.png" alt="サンプル"></a>
                     </div>
-                    <div class="works-item-text">
-                        <h3>WordPressテーマ模写1</h3>
-                        <p>WordPress, HTML, CSS (ID:Koki, PW:Wordpress)</p>
+                    <div class="works-item-text wow fadeInDown" data-wow-duration="2s">
+                        <h3 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.2s">WordPressテーマ模写1</h3>
+                        <p class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">WordPress, HTML, CSS (ID:Koki, PW:Wordpress)</p>
                     </div>
                 </div>
-                <div class="works-item works-layout2">
+                <div class="works-item works-layout2 wow fadeInRight" data-wow-duration="2s">
                     <div class="works-item-image">
                         <a href="https://koki-wordpress1.xyz" target="_blank" rel="noopener noreferrer"><img src="img/works2.png" alt="works2"></a>
                     </div>
-                    <div class="works-item-text">
-                        <h3>WordPressテーマ模写2</h3>
-                        <p>WordPress, HTML, CSS, jQuery</p>
+                    <div class="works-item-text wow fadeInDown" data-wow-duration="2s">
+                        <h3 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.2s">WordPressテーマ模写2</h3>
+                        <p class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">WordPress, HTML, CSS, jQuery</p>
                     </div>
                 </div>
-                <div class="works-item works-layout3">
+                <div class="works-item works-layout3 wow fadeInLeft" data-wow-duration="2s">
                     <div class="works-item-image">
                         <a href="#" target="_blank" rel="noopener noreferrer"><img src="img/sample.jpg" alt="サンプル"></a>
                     </div>
-                    <div class="works-item-text">
-                        <h3>タイトルタイトルタイトル</h3>
-                        <p>HTML, CSS, jQuery, WordPress</p>
+                    <div class="works-item-text wow fadeInDown" data-wow-duration="2s">
+                        <h3 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.2s">タイトルタイトルタイトル</h3>
+                        <p class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">HTML, CSS, jQuery, WordPress</p>
                     </div>
                 </div>
-                <div class="works-item works-layout4">
+                <div class="works-item works-layout4 wow fadeInRight" data-wow-duration="2s">
                     <div class="works-item-image">
                         <a href="https://www.koki-portfolio1.xyz/" target="_blank" rel="noopener noreferrer"><img src="img/works4.png" alt="サンプル"></a>
                     </div>
-                    <div class="works-item-text">
-                        <h3>ポートフォリオサイト2</h3>
-                        <p>HTML, CSS, jQuery</p>
+                    <div class="works-item-text wow fadeInDown" data-wow-duration="2s">
+                        <h3 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.2s">ポートフォリオサイト2</h3>
+                        <p class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">HTML, CSS, jQuery</p>
                     </div>
                 </div>
-                <div class="works-item works-layout5">
+                <div class="works-item works-layout5 wow fadeInLeft" data-wow-duration="2s">
                     <div class="works-item-image">
                         <a href="https://www.koki-landingpage1.xyz/" target="_blank" rel="noopener noreferrer"><img src="img/works5.png" alt="サンプル"></a>
                     </div>
-                    <div class="works-item-text">
-                        <h3>ランディングページ模写1</h3>
-                        <p>HTML, CSS, jQuery</p>
+                    <div class="works-item-text wow fadeInDown" data-wow-duration="2s">
+                        <h3 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.2s">ランディングページ模写1</h3>
+                        <p class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">HTML, CSS, jQuery</p>
                     </div>
                 </div>
-                <div class="works-item works-layout6">
+                <div class="works-item works-layout6 wow fadeInRight" data-wow-duration="2s">
                     <div class="works-item-image">
                         <a href="https://www.koki-landingpage2.xyz/" target="_blank" rel="noopener noreferrer"><img src="img/works6.png" alt="サンプル"></a>
                     </div>
-                    <div class="works-item-text">
-                        <h3>ランディングページ模写2</h3>
-                        <p>HTML, CSS, jQuery</p>
+                    <div class="works-item-text wow fadeInDown" data-wow-duration="2s">
+                        <h3 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.2s">ランディングページ模写2</h3>
+                        <p class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">HTML, CSS, jQuery</p>
                     </div>
                 </div>
-                <div class="works-item works-layout7">
+                <div class="works-item works-layout7 wow fadeInLeft" data-wow-duration="2s">
                     <div class="works-item-image">
                         <a href="http://koki-wordpress3.xyz" target="_blank" rel="noopener noreferrer"><img src="img/works7.png" alt="サンプル"></a>
                     </div>
-                    <div class="works-item-text">
-                        <h3>ランディングページ模写3</h3>
-                        <p>HTML, CSS, jQuery</p>
+                    <div class="works-item-text wow fadeInDown" data-wow-duration="2s">
+                        <h3 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.2s">ランディングページ模写3</h3>
+                        <p class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">HTML, CSS, jQuery</p>
                     </div>
                 </div>
             </div>
         </div><!-- inner -->
     </section><!-- works -->
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="inner">
-            <h2>SKILLS<img src="img/line.png" alt="筆線"></h2>
+            <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">SKILLS<img src="img/line.png" alt="筆線"></h2>
             <div class="skills-contents">
                 <img src="img/line2.png" alt="線">
                 <img src="img/line2.png" alt="線">
                 <img src="img/line2.png" alt="線">
                 <img src="img/line2.png" alt="線">
-                <div class="skills-contents-item">
+                <div class="skills-contents-item wow bounceIn" data-wow-duration="2s">
                     <i class="fab fa-html5"></i>
                     <p>HTML5</p>
                 </div>
-                <div class="skills-contents-item">
+                <div class="skills-contents-item wow bounceIn" data-wow-duration="2s" data-wow-delay="0.5s">
                     <i class="fab fa-css3-alt"></i>
                     <p>CSS3</p>
                 </div>
-                <div class="skills-contents-item">
+                <div class="skills-contents-item wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
                     <i class="fab fa-sass"></i>
                     <p>Sass</p>
                 </div>
-                <div class="skills-contents-item">
+                <div class="skills-contents-item wow bounceIn" data-wow-duration="2s" data-wow-delay="0.5s">
                     <i class="fab fa-bootstrap"></i>
                     <p>Bootstrap4</p>
                 </div>
-                <div class="skills-contents-item">
+                <div class="skills-contents-item wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
                     <i class="fab fa-js"></i>
                     <p>JavaScript (jQuery)</p>
                 </div>
-                <div class="skills-contents-item">
+                <div class="skills-contents-item wow bounceIn" data-wow-duration="2s" data-wow-delay="1.5s">
                     <i class="fab fa-php"></i>
                     <p>PHP</p>
                 </div>
-                <div class="skills-contents-item">
+                <div class="skills-contents-item wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
                     <i class="fas fa-database"></i>
                     <p>SQL</p>
                 </div>
-                <div class="skills-contents-item">
+                <div class="skills-contents-item wow bounceIn" data-wow-duration="2s" data-wow-delay="1.5s">
                     <i class="fab fa-wordpress"></i>
                     <p>WordPress</p>
                 </div>
-                <div class="skills-contents-item">
+                <div class="skills-contents-item wow bounceIn" data-wow-duration="2s" data-wow-delay="2s">
                     <i class="fab fa-github-square"></i>
                     <p>GitHub</p>
                 </div>
@@ -217,29 +217,29 @@
         </div><!-- inner -->
     </section><!-- skills -->
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="inner">
-            <h2>CONTACT<img src="img/line.png" alt="筆線"></h2>
+            <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">CONTACT<img src="img/line.png" alt="筆線"></h2>
             <form action="" class="contact-items">
-                <div class="contact-name">
+                <div class="contact-name wow fadeInLeft" data-wow-duration="2s">
                     <h3>Name</h3>
                     <div class="name-content">
                         <input type="text">
                     </div>
                 </div>
-                <div class="contact-mail">
+                <div class="contact-mail wow fadeInRight" data-wow-duration="2s">
                     <h3>E-mail</h3>
                     <div class="mail-content">
                         <input type="email">
                     </div>
                 </div>
-                <div class="contact-text">
+                <div class="contact-text wow fadeInLeft" data-wow-duration="2s">
                     <h3>Message</h3>
                     <div class="text-content">
                         <textarea></textarea>
                     </div>
                 </div>
-                <div class="contact-submit">
+                <div class="contact-submit wow fadeInDown" data-wow-duration="2s">
                     <input type="submit" value="Submit">
                 </div>
             </form>
@@ -254,6 +254,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
