@@ -676,7 +676,7 @@ a {
   color: #333;
   font-size: 14.5vh;
   position: absolute;
-  right: -25vh;
+  right: -23vh;
   top: 23.5vh;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -685,11 +685,11 @@ a {
 
 .main-visual .main-visual-fixed {
   color: #EEE;
-  font-size: 95px;
+  font-size: 14.5vh;
   position: fixed;
-  right: -150px;
+  right: -23vh;
   text-shadow: 0.6px 0 0 #BBB, 0 0.6px 0 #BBB, -0.6px 0 0 #BBB, 0 -0.6px 0 #BBB;
-  top: 152px;
+  top: 23.5vh;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   z-index: -100;
@@ -705,22 +705,22 @@ a {
 .main-visual hr:nth-of-type(1) {
   color: #333;
   position: absolute;
-  right: -534px;
-  width: 1250px;
+  right: -82vh;
+  width: 191vh;
 }
 
 .main-visual hr:nth-of-type(2) {
   color: #333;
   position: absolute;
-  right: -275px;
-  width: 950px;
+  right: -42.5vh;
+  width: 145vh;
 }
 
 .main-visual hr:nth-of-type(3) {
   color: #333;
   position: absolute;
-  right: 109px;
-  width: 400px;
+  right: 15.7vh;
+  width: 62vh;
 }
 
 .main-visual h2 {
@@ -730,7 +730,7 @@ a {
   letter-spacing: 2px;
   position: absolute;
   text-shadow: 1px 0 0 #333, 0 1px 0 #333, -1px 0 0 #333, 0 -1px 0 #333;
-  top: 270px;
+  top: 50.5vh;
   z-index: -1;
 }
 

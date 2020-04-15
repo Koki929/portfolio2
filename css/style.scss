@@ -391,22 +391,22 @@ $breakpoints: (
 		color: $black;
 		font-size: 14.5vh;
 		position: absolute;
-		right: -25vh;
+		right: -23vh;
 		top: 23.5vh;
 		transform:rotate(90deg);
 		z-index: -1;
 	}
 	.main-visual-fixed {
 		color: #EEE;
-		font-size: 95px;
+		font-size: 14.5vh;
 		position: fixed;
-		right: -150px;
+		right: -23vh;
 		text-shadow:
 			0.6px 0 0 #BBB,
 			0 0.6px 0 #BBB,
 			-0.6px 0 0 #BBB,
 			0 -0.6px 0 #BBB;
-		top: 152px;
+		top: 23.5vh;
 		transform:rotate(90deg);
 		z-index: -100;
 	}
@@ -417,20 +417,20 @@ $breakpoints: (
 		&:nth-of-type(1) {
 			color: $black;
 			position: absolute;
-			right: -534px;
-			width: 1250px;
+			right: -82vh;
+			width: 191vh;
 		}
 		&:nth-of-type(2) {
 			color: $black;
 			position: absolute;
-			right: -275px;
-			width: 950px;
+			right: -42.5vh;
+			width: 145vh;
 		}
 		&:nth-of-type(3) {
 			color: $black;
 			position: absolute;
-			right: 109px;
-			width: 400px;
+			right: 15.7vh;
+			width: 62vh;
 		}
 	}
 	h2 {
@@ -444,7 +444,7 @@ $breakpoints: (
 			0 1px 0 $black,
 			-1px 0 0 $black,
 			0 -1px 0 $black;
-		top: 270px;
+		top: 50.5vh;
 		z-index: -1;
 	}
 }
