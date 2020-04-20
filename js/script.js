@@ -51,3 +51,25 @@ $('.movetext').each(function(){
 
 /* wow */
 new WOW().init();
+
+/* textyle */
+$('.target').textyleF({
+	duration : 1300, //エフェクト時間(ミリ秒)
+	delay : 70, //文字間のエフェクト間隔(ミリ秒)
+});
+
+$('.target2').textyleF({
+	duration : 900, //エフェクト時間(ミリ秒)
+	delay : 50, //文字間のエフェクト間隔(ミリ秒)
+});
+
+$('.target3').textyleF({
+	duration : 400, //エフェクト時間(ミリ秒)
+	delay : 50, //文字間のエフェクト間隔(ミリ秒)
+	callback : function(){
+		$(this).css({
+		  color : '#EEE',
+		  transition : '1s',
+		});
+	}
+});
