@@ -869,7 +869,8 @@ a {
     font-size: 14vw;
     left: 0;
     right: auto;
-    top: 200px;
+    text-shadow: 0.6px 0 0 #000, 0 0.6px 0 #000, -0.6px 0 0 #000, 0 -0.6px 0 #000;
+    top: 60px;
     -webkit-transform: none;
             transform: none;
   }
