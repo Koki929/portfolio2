@@ -1384,7 +1384,7 @@ a {
 @media screen and (max-width: 767px) {
   .skills .inner h2 img {
     left: -15px;
-    width: 235px;
+    width: 255px;
   }
 }
 
@@ -1638,7 +1638,7 @@ a {
 @media screen and (max-width: 767px) {
   .contact .inner h2 img {
     right: -14px;
-    width: 290px;
+    width: 320px;
   }
 }
 
