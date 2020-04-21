@@ -570,6 +570,7 @@ a {
 			0 -1px 0 $black;
 		z-index: -1;
 		@include mq('tab') {
+			bottom: 50px;
 			font-size: 11vw;
 			left: auto;
 			right: 0;
@@ -644,7 +645,7 @@ a {
 				width: 420px;
 				@include mq('sp') {
 					left: -10px;
-					width: 320px;
+					width: 340px;
 				}
 			}
 		}
@@ -722,7 +723,7 @@ a {
 				width: 320px;
 				@include mq('sp') {
 					right: -10px;
-					width: 240px;
+					width: 260px;
 				}
 			}
 		}
@@ -875,7 +876,7 @@ a {
 				bottom: 8px;
 				left: -26px;
 				position: absolute;
-				width: 300px;
+				width: 320px;
 				@include mq('sp') {
 					left: -15px;
 					width: 235px;
@@ -944,6 +945,16 @@ a {
 						width: 300px;
 					}
 				}
+				&:nth-child(5) {
+					display: none;
+					@include mq('sp') {
+						display: block;
+						left: -155px;
+						top: 310px;
+						transform:rotate(90deg);
+						width: 610px;
+					}
+				}
 			}
 			&-item {
 				i {
@@ -955,7 +966,6 @@ a {
 				}
 				.fa-html5 {
 					transition: all 0.3s ease 0s;
-					-webkit-tap-highlight-color:#E44D26;
 					&:hover {
 						color: #E44D26;
 					}
@@ -1040,7 +1050,7 @@ a {
 				bottom: 8px;
 				position: absolute;
 				right: -34px;
-				width: 390px;
+				width: 410px;
 				@include mq('sp') {
 					right: -14px;
 					width: 290px;

@@ -936,6 +936,7 @@ a {
 
 @media screen and (max-width: 994px) {
   .main-visual h2 {
+    bottom: 50px;
     font-size: 11vw;
     left: auto;
     right: 0;
@@ -1044,7 +1045,7 @@ a {
 @media screen and (max-width: 767px) {
   .about .inner h2 img {
     left: -10px;
-    width: 320px;
+    width: 340px;
   }
 }
 
@@ -1154,7 +1155,7 @@ a {
 @media screen and (max-width: 767px) {
   .works .inner h2 img {
     right: -10px;
-    width: 240px;
+    width: 260px;
   }
 }
 
@@ -1377,7 +1378,7 @@ a {
   bottom: 8px;
   left: -26px;
   position: absolute;
-  width: 300px;
+  width: 320px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1485,6 +1486,21 @@ a {
   }
 }
 
+.skills .inner .skills-contents .skills-line:nth-child(5) {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .skills .inner .skills-contents .skills-line:nth-child(5) {
+    display: block;
+    left: -155px;
+    top: 310px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 610px;
+  }
+}
+
 .skills .inner .skills-contents-item i {
   font-size: 80px;
   margin-bottom: 10px;
@@ -1497,7 +1513,6 @@ a {
 .skills .inner .skills-contents-item .fa-html5 {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  -webkit-tap-highlight-color: #E44D26;
 }
 
 .skills .inner .skills-contents-item .fa-html5:hover {
@@ -1617,7 +1632,7 @@ a {
   bottom: 8px;
   position: absolute;
   right: -34px;
-  width: 390px;
+  width: 410px;
 }
 
 @media screen and (max-width: 767px) {
