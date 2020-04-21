@@ -429,7 +429,7 @@ a {
 	letter-spacing: 2px;
 	opacity: 0;
 	overflow: auto;
-	padding: 30vh 110px 0 16px;
+	padding: 0 110px 0 16px;
 	position: fixed;
 	text-align: left;
 	top: 0;
@@ -439,7 +439,17 @@ a {
 	z-index: 50;
 	@include mq('tab') {
 		left: 0;
-		padding: 100px 16px 16px;
+		padding: 0 16px 0 16px;
+	}
+	.drawer-nav {
+		height: 100%;
+		position: relative;
+		.drawer-list {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+		}
 	}
 }
 
@@ -547,6 +557,7 @@ a {
 		}
 	}
 	h2 {
+		bottom: 0;
 		color: $black;
 		font-size: 108px;
 		left: 80px;
@@ -557,14 +568,12 @@ a {
 			0 1px 0 $black,
 			-1px 0 0 $black,
 			0 -1px 0 $black;
-		top: 50.5vh;
 		z-index: -1;
 		@include mq('tab') {
 			font-size: 11vw;
 			left: auto;
 			right: 0;
 			text-align: right;
-			top: 65vh;
 		}
 	}
 	.target3 {
