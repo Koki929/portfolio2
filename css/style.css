@@ -936,11 +936,16 @@ a {
 
 @media screen and (max-width: 994px) {
   .main-visual h2 {
-    bottom: 50px;
     font-size: 11vw;
     left: auto;
     right: 0;
     text-align: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-visual h2 {
+    bottom: 100px;
   }
 }
 

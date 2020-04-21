@@ -570,11 +570,13 @@ a {
 			0 -1px 0 $black;
 		z-index: -1;
 		@include mq('tab') {
-			bottom: 50px;
 			font-size: 11vw;
 			left: auto;
 			right: 0;
 			text-align: right;
+		}
+		@include mq('sp') {
+			bottom: 100px;
 		}
 	}
 	.target3 {
