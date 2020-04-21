@@ -1497,6 +1497,7 @@ a {
 .skills .inner .skills-contents-item .fa-html5 {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  -webkit-tap-highlight-color: #E44D26;
 }
 
 .skills .inner .skills-contents-item .fa-html5:hover {

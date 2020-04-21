@@ -955,6 +955,7 @@ a {
 				}
 				.fa-html5 {
 					transition: all 0.3s ease 0s;
+					-webkit-tap-highlight-color:#E44D26;
 					&:hover {
 						color: #E44D26;
 					}
